@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ListView
+        android:id="@+id/local_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/gray"
+        android:dividerHeight="0.1dp"></ListView>
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/music_play_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_gravity="bottom">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/play_pic"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+            <!--android:src="@drawable/gakki"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/play_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="淘汰"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_toRightOf="@id/play_pic"-->
+            <!--android:textColor="#000000"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:maxEms="10"-->
+            <!--android:ellipsize="end"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/play_singer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="歌手:陈亦迅"-->
+            <!--android:textColor="@color/play"-->
+            <!--android:layout_below="@id/play_title"-->
+            <!--android:layout_toRightOf="@+id/play_pic"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:maxEms="12"-->
+            <!--android:ellipsize="end"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/play_stop"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@mipmap/play"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/play_next"-->
+            <!--android:layout_marginRight="10dp"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/play_next"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@mipmap/play_next"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

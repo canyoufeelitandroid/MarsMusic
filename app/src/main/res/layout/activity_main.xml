@@ -4,14 +4,104 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.byhuang.marsmusic.marsmusic.activity.MainActivity">
+    tools:context="com.byhuang.marsmusic.marsmusic.activity.MainActivity"
+    >
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/replace_place_1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/play_pic_main"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/gakki"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/play_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘汰"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/play_pic_main"
+            android:textColor="#000000"
+            android:layout_margin="10dp"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/play_singer_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌手:陈奕迅"
+            android:textColor="@color/play"
+            android:layout_below="@id/play_title_main"
+            android:layout_toRightOf="@+id/play_pic_main"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:maxEms="12"
+            android:ellipsize="end"
+            />
+
+        <Button
+            android:id="@+id/play_stop_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/play"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/play_next_main"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/play_next_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/play_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+   <!--<Button-->
+       <!--android:id="@+id/test_btn"-->
+       <!--android:text="test"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content" />-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/test_lv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></ListView>-->
+
+    <ProgressBar
+        android:id="@+id/pro_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
 </RelativeLayout>
